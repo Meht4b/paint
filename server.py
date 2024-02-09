@@ -26,6 +26,7 @@ def handleClient(conn,client):
 
         except:
             conn.close()
+            clients[client] = None
 
 
 while True:
